@@ -5,21 +5,7 @@ import Header from '../Component/Header'
 const About = () => {
   return (
     <>
-      <header>
-        <nav>
-            <ul>
-                <li>
-                    <NavLink to="/">Home</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/about">About</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/contact">Contact</NavLink>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <Header/>
     <section>
         <h1>About Page</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore nemo facilis vitae culpa eligendi

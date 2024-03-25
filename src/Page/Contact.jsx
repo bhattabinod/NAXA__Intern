@@ -4,28 +4,15 @@ import Header from '../Component/Header'
 
 const Contact = () => {
   return (
-    <>
-      <header>
-        <nav>
-            <ul>
-                <li>
-                    <NavLink to="/">Home</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/about">About</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/contact">Contact</NavLink>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div className='bg-red-50 w-full'>
+    <Header/>
     <section>
         <h1>Contact Page</h1>
         <p>+977 98678345</p>
         <p>Baneshwor, Kathmandu</p>
     </section>
-    </>
+    <button className='text-white shadow-sm rounded-full hover:bg-blue-700 hover:text-black'>Reach Us</button>
+    </div>
   )
 }
 
