@@ -7,20 +7,21 @@ import Contact from './Page/Contact'
 import Error from './Page/Error'
 
 import Form from './Component/RegistrationForm'
+import Info from './Page/Info'
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
         <Route path = '*' element={<Error/>}></Route>
       </Routes>
-      </BrowserRouter>
-      <Form/>
+      </BrowserRouter> */}
+      <Info/>
     </>
   )
 }
