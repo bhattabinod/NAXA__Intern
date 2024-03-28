@@ -22,82 +22,90 @@ import Email from "../Images/email.png"
 const Info = () => {
   return (
     <>
-      <div className="md:flex lg:flex md:justify-between bg-blue-500 mx-20">
-        <div className="flex items-center mx-10">
-          <img
-            className="h-20 w-18 ml-3"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem_of_Nepal.svg/1200px-Emblem_of_Nepal.svg.png"
-            alt=""
-          />
-          <div className="grid grid-cols-1 gap-0 sm:grid sm:grid-cols-1 sm:gap-3 m-3 text-white">
-            <h2 className="font-extrabold">कर्णाली प्रदेश सरकार</h2>
-            <h2 className="font-semibold">
-              मुख्यमन्त्री तथा मन्त्रिपरिषदको कार्यालय
-            </h2>
-            <p>Project Information Management System</p>
-          </div>
-        </div>
-        <div className="flex sm:flex sm:gap-4 md:flex md:gap-4 lg:flex lg:gap-5 items-center mx-10 text-white">
-          <p className="mx-3">Data</p>
-          <p className="mx-3">About</p>
-          <button>
-            <img src={Rectangle1} alt="" />
-          </button>
-          <button className="mx-3 text-white border-white">Login</button>
-        </div>
-      </div>
-      <div className="md:flex bg-blue-500 sm:grid sm:grid-cols-1 sm:gap-1 p-3 mx-20 rounded-b-lg h-full">
-        <div className="justify-center sm:bottom-0 mx-10 my-20  ">
-          <h1 className="mt-20 font-bold text-white mb-3">
-            Interactive Digital Portal of Projects in karnali Province of Nepal
-          </h1>
-          <h2 className="text-white">
-            A digital portal to identify the enabling factors of the development
-            supported by development partners in Karnali Province of Nepal{" "}
-          </h2>
-        </div>
-        <img
-          className="mt-20 mb-4 mx-4 h-23 w-29 rounded"
-          src={Laptop}
-          alt=""
-        />
-      </div>
+        {/* -------------------------------------------Header Part----------------------------------------- */}
 
-      <div className="md:flex p-12 bg-yellow-100 mt-5 mx-20 rounded-t-lg">
-        <div className="mt-20 ml-15 justify-center">
-          <h1 className="font-extralight">
-            This portal is developed to identify the enabling factors of the
-            development supported by development partners in Karnali Province of
-            Nepal.
-          </h1>
-          <p className="my-3">
-            In the last few years, there has been a huge concern among the civil
-            societies, government and international development partners about
-            improving the quality of the life of people in Karnali. Nepal
-            government along with the support of donor countries and
-            multilateral funding agencies has invested huge resources to the
-            implementing development project through NGO/INGO and others. Many
-            organizations including NGO/INGOs have spent a significant amount of
-            resources towards assessing development initiatives through project
-            intervention at provincial and municipal level. The focus of all
-            these investments and efforts is to create the equitable prosperous
-            society but such investment is not always based on the proper
-            assessment of the local needs and expectations.
-          </p>
+        <div className="flex justify-between md:grid md:grid-cols-1 lg:flex sm:grid sm:grid-cols-1 bg-blue-500 mx-20">
+            <div className="flex items-center sm:flex sm:justify-center md:flex md:justify-center lg:flex lg:justify-start mx-10">
+            <img
+                className="h-20 w-18 ml-3"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem_of_Nepal.svg/1200px-Emblem_of_Nepal.svg.png"
+                alt=""
+            />
+            <div className="grid grid-cols-1 gap-0 m-3 text-white">
+                <h2 className="font-extrabold">कर्णाली प्रदेश सरकार</h2>
+                <h2 className="font-semibold">
+                मुख्यमन्त्री तथा मन्त्रिपरिषदको कार्यालय
+                </h2>
+                <p>Project Information Management System</p>
+            </div>
+            </div>
+            <div className="flex items-center mx-10 md:flex md:justify-center sm:flex sm:justify-center lg:flex lg:gap-0 text-white">
+            <p className="mx-3">Data</p>
+            <p className="mx-3">About</p>
+            <button className="lg:h-20 lg:w-20">
+                <img src={Rectangle1} alt="" />
+            </button>
+            <button className="mx-3 text-white border-white">Login</button>
+            </div>
         </div>
-        <img
-          className="my-20 mr-5 ml-10 h-30 w-25 rounded-md"
-          src={Rectangle2}
-          alt=""
-        />
-      </div>
-      <div className="bg-yellow-100 mx-20 font-bold">
+
+        {/* ----------------------------------------------------Page I--------------------------------------------------   */}
+
+        <div className="bg-blue-500 lg:grid lg:grid-cols-2 lg:gap-3 xl:grid xl:grid-cols-2 xl:gap-1 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 p-3 mx-20 rounded-b-lg lg:h-full">
+            <div className="justify-center lg:py-20  lg:text-balance lg:ml-10 xl:text-start md:my-10 md:text-center sm:my-10 sm:text-start lg:text-start ">
+                <h1 className="lg:mt-0 lg:font-bold md:mt-10 md:justify-center font-bold text-white mb-3 xl:font-bold">
+                    Interactive Digital Portal of Projects in karnali Province of Nepal
+                </h1>
+                <h2 className="text-white font-extralight">
+                    A digital portal to identify the enabling factors of the development
+                    supported by development partners in Karnali Province of Nepal.
+                </h2>
+            </div>
+
+            <div className="lg:place-self-center xl:place-self-end md:place-self-center sm:place-self-center ">
+                <img className=" mt-20 md:mt-10 sm:mt-10 mb-4 lg:h-96 lg:w-25 lg:mx-5 rounded xl:h-96 xl:w-25 xl:mx-5" src={Laptop} alt="" />
+            </div>
+        </div>
+
+        {/* -----------------------------------------------------Page-II-------------------------------------------------------- */}
+
+        <div className="flex p-12 bg-yellow-100 mt-5 mx-20 rounded-t-lg sm:grid sm:grid-cols-1 md:grid      md:grid-cols-1 lg:grid lg:grid-cols-1 xl:grid xl:grid-cols-2 ">
+            <div className="mt-20 ml-15 justify-center">
+            <h1 className="font-extralight">
+                This portal is developed to identify the enabling factors of the
+                development supported by development partners in Karnali Province of
+                Nepal.
+            </h1>
+            <p className="my-3">
+                In the last few years, there has been a huge concern among the civil
+                societies, government and international development partners about
+                improving the quality of the life of people in Karnali. Nepal
+                government along with the support of donor countries and
+                multilateral funding agencies has invested huge resources to the
+                implementing development project through NGO/INGO and others. Many
+                organizations including NGO/INGOs have spent a significant amount of
+                resources towards assessing development initiatives through project
+                intervention at provincial and municipal level. The focus of all
+                these investments and efforts is to create the equitable prosperous
+                society but such investment is not always based on the proper
+                assessment of the local needs and expectations.
+            </p>
+            </div>
+
+            <div className="lg:place-self-center xl:place-self-end md:place-self-center sm:place-self-center ">
+                <img className=" mt-20 md:mt-10 sm:mt-10 mb-4 lg:h-auto lg:w-auto xl:h-auto xl:w-auto lg:mx-5 rounded xl:mx-5" src={Rectangle2} alt="" />
+            </div>
+         </div>
+
+        {/* --------------------------------------------------Objectives------------------------------------------------- */}
+
+      <div className="bg-yellow-100 mx-20 font-bold sm:text-center md:text-start lg:text-start xl:text-start">
         <p className="font-bold mx-5">Objective</p>
       </div>
-      <div className="md:flex bg-yellow-100 mx-20 rounded-b-lg">
-        <div>
-          <img className="my-4 mx-5" src={Freelance} alt="" />
-          <p className="mx-5 mb-10">
+      <div className="flex bg-yellow-100 mx-20 rounded-b-lg">
+        <div className="sm:place-self-center sm:align-middle">
+          <img className="my-4 mx-10" src={Freelance} alt="" />
+          <p className="mx-5 mb-10 sm:text-start">
             Identifying the key actors to operate Project Database Portal
           </p>
         </div>
@@ -117,6 +125,8 @@ const Info = () => {
         </div>
       </div>
 
+      {/* --------------------------------------------Data Source--------------------------------------------------------- */}
+
       <div className="bg-blue-200 mx-40 text-center mt-3 my-3 rounded">
         <div>
           <h1 className="mt-20"> Data Source</h1>
@@ -128,63 +138,67 @@ const Info = () => {
 
         <div className="my-5 mb-3 text-red-600">FEDERAL GOVERNMENT</div>
 
-        <div className="justify-center items-center mx-20 grid grid-cols-1 gap-3">
-        <div className="flex gap-5 justify-center items-center">
-            <div className="flex gap-2">
-              <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt=""/>
-              <img src={Finance} alt="" />
-            </div>
+        <div className="lg:grid lg:grid-cols-1 justify-center items-center mx-20 ">
+            <div className="lg:flex lg:gap-8 justify-center items-center sm:grid sm:grid-cols-1 sm:gap-3">
+                <div className="lg:flex lg:gap-3 sm:grid sm:grid-cols-1">
+                    <img className="h-10 w-15 justify-center mt-2.5 lg:mt-2.5 sm:place-self-start" src={Nepal} alt=""/>
+                    <img className="sm:place-self-start lg:mt-3" src={Finance} alt="" />
+                </div>
 
-            <div className="flex gap-2">
-              <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt=""/>
-              <img src={Line} alt="" />
-            </div>
-        </div>
-
-        <div className="flex gap-5 justify-center items-center">
-            <div className="flex gap-2">
-              <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt=""/>
-                <div className="font-bold mt-2.5 text-black">
-                    <h2 className="text-left">Government of Nepal</h2>
-                    <h3>Aid Management Information System for Nepal</h3>
+                <div className="lg:flex lg:gap-3 sm:grid sm:grid-cols-1">
+                    <img className="h-10 w-15 justify-center mt-2.5 lg:mt-2.5 sm:place-self-start" src={Nepal} alt=""/>
+                    <img className="sm:place-self-start lg:mt-3" src={Line} alt="" />
                 </div>
             </div>
 
-            <div className="flex gap-2" >
-                <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt="" />
-                <img  src={Mahalekha} alt="" />
+            <div className="lg:flex lg:gap-8 justify-center items-center sm:grid sm:grid-cols-1 sm:gap-3 lg:mt-3">
+                <div className="sm:grid sm:grid-cols-1 lg:flex lg:gap-3">
+                    <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt=""/>
+                    <div className="font-bold mt-2.5 text-black sm:font-medium sm:font-serif">
+                        <h2 className="text-start">Government of Nepal</h2>
+                        <h3 className="text-start">Aid Management Information System for Nepal</h3>
+                    </div>
+                </div>
+
+                <div className="lg:flex lg:gap-3 sm:grid sm:grid-cols-1">
+                    <img className="h-10 w-15 justify-center mt-2.5 lg:mt-2.5 sm:place-self-start" src={Nepal} alt=""/>
+                    <img className="sm:place-self-start lg:mt-3" src={Mahalekha} alt="" />
+                </div>
             </div>
-        </div>
     </div>
         
-    <div className="mt-5 mb-3 text-red-600">PROVINCIAL GOVERNMENT</div>
+            <div className="mt-5 mb-3 text-red-600">PROVINCIAL GOVERNMENT</div>
 
-    <div className="justify-center items-center mx-20">
-            <div className="flex gap-12 justify-center items-center">
-                <div className="flex gap-2">
-                    <img className="h-10 w-15 justify-center mt-2.5"src={Nepal} alt=""/>
-                    <img className="h-9 w-13 mt-2 mr-5 " src={Karnali} alt="" />
+            <div className="justify-center items-center mx-20 sm:grid sm:grid-cols-1">
+                <div className="lg:flex lg:gap-5 justify-center items-center sm:grid sm:grid-cols-1 sm:gap-3">
+                    <div className="lg:flex lg:gap-2 sm:grid sm:grid-cols-1 sm:gap-0">
+                        <img className="h-10 w-15 justify-center mt-2.5"src={Nepal} alt=""/>
+                        <img className="lg:h-9 lg:w-13 mt-2 mr-5 " src={Karnali} alt="" />
+                    </div>
+
+                    <div className="flex gap-2">
+                        <img className="lg:h-10 lg:w-15 mt-2 sm:h-auto sm:w-auto " src={Provincial} alt="" />
+                    </div>
+
+                    <div className="lg:flex gap-2 sm:grid sm:grid-cols-1" >
+                        <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt="" />
+                        <img  src={Mahalekha} alt="" />
+                    </div>            
                 </div>
-
-                <div className="flex gap-2">
-                    {/* <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt=""/> */}
-                    <img className="h-10 w-15 mt-2 " src={Provincial} alt="" />
-                </div>
-
-                <div className="flex gap-2" >
-                    <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt="" />
-                    <img  src={Mahalekha} alt="" />
-                </div>            
             </div>
-        </div>
 
-        <div className="mt-5 mb-2  text-red-600">MUNICIPAL GOVERNMENT</div>
-        <div className="justify-center items-center flex">
-        <div className="flex gap-2" >
-                    <img className="h-10 w-15 justify-center mt-1" src={Nepal} alt="" />
-                    <img  className="mb-4" src={Sthaniya} alt="" />
-                </div>  
-        </div>
+            <div className="mt-5 mb-2  text-red-600">MUNICIPAL GOVERNMENT</div>
+
+            <div className="justify-center items-center mx-20 sm:grid sm:grid-cols-1">
+                <div className="lg:flex lg:gap-12 justify-center items-center sm:grid sm:grid-cols-1 sm:gap-3">
+
+                    <div className="flex gap-2 sm:grid sm:grid-cols-1" >
+                        <img className="h-10 w-15 justify-center mt-2.5" src={Nepal} alt="" />
+                        <img  className="sm:mb-3" src={Sthaniya} alt="" />
+                    </div>            
+                </div>
+            </div>
+
       </div>
 
         <div className="flex items-center mx-40 bg-blue-500 rounded h-44 mt-5">
