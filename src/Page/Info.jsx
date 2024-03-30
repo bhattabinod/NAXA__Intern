@@ -199,7 +199,8 @@ const Info = () => {
                 </div>
             </div>
 
-      </div>
+        </div>
+
 
        {/* --------------------------------------------Interactive Digital Portal----------------------------- */}
 
@@ -213,6 +214,19 @@ const Info = () => {
             
             <div className=" justify-center sm:place-self-center sm:h-12 lg:place-self-center">
                 <button className="border-white xl:ml-60 lg:text-right sm:place-self-center sm:text-center sm:justify-center ">Explore Map</button>
+
+{/* --------------------------------------------Interactive Digital Portal----------------------------- */}
+
+        <div className="xl:flex items-center mx-40 bg-blue-500 rounded h-44 mt-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:h-auto">
+            <div className="sm:place-self-center lg:place-self-center">
+                <img className="xl:ml-10" src={Location} alt="" />
+            </div>
+            <div>
+                <p className="text-white font-bold lg:ml-20 sm:text-center xl:text-center">Interactive digital portal of projects in Karnali Province of Nepal </p>
+            </div>
+            
+            <div className=" justify-center sm:place-self-center sm:h-12 lg:place-self-center">
+                <button className="border-white xl:ml-80 lg:text-right sm:place-self-center sm:text-center sm:justify-center ">Explore Map</button>
             </div>
         </div>
 
