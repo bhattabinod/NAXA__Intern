@@ -201,147 +201,93 @@ const Info = () => {
 
       </div>
 
-        <div className="flex items-center mx-40 bg-blue-500 rounded h-44 mt-5">
-            <div>
-                <img className="ml-10" src={Location} alt="" />
+       {/* --------------------------------------------Interactive Digital Portal----------------------------- */}
+
+       <div className="xl:flex xl:gap-0 items-center mx-40 bg-blue-500 rounded h-44 mt-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:h-auto">
+            <div className="sm:place-self-center lg:place-self-center">
+                <img className="xl:ml-10" src={Location} alt="" />
             </div>
-            <div>
-                <p className="text-white font-bold ml-20">Interactive digital portal of projects in Karnali Province of Nepal </p>
+            <div className="xl:text-start xl:text-black">
+                <p className=" sm:text-white font-bold lg:ml-20 sm:text-center xl:text-black xl:text-justify xl:ml-44">Interactive digital portal of projects in Karnali Province of Nepal </p>
             </div>
             
-            <div className="float-right justify-center">
-                <button className="border-white ml-80 text-right">Explore Map</button>
+            <div className=" justify-center sm:place-self-center sm:h-12 lg:place-self-center">
+                <button className="border-white xl:ml-60 lg:text-right sm:place-self-center sm:text-center sm:justify-center ">Explore Map</button>
             </div>
         </div>
 
-        <div className=" mx-40 my-5 grid grid-cols-2 gap-8">
-            <div className="flex justify-center">
-                <div className="flex gap-2">
+        {/* -------------------------------------------------Footer--------------------------------------------------- */}
+
+        <div className="  lg:mx-40 my-5 grid grid-cols-2 gap-8  sm:grid sm:grid-cols-1 sm:mx-32 lg:grid lg:grid-cols-2">
+            <div className="lg:flex lg:gap-14 justify-center sm:grid sm:grid-cols-1 sm:gap-5 sm:w-auto sm:h-auto ">
+                <div className="flex gap-2 lg:justify-center lg:items-center sm:justify-center sm:items-center">
                     <img className="h-10 w-15 justify-center mt-2.5"src={Nepal} alt=""/>
                     <img className="h-9 w-13 mt-2 mr-5 " src={Karnali} alt="" />
                 </div>
 
-                <div class="flex flex-1">
+                <div class="flex flex-1 lg:place-self-center sm:hidden">
                     <div class="inline-block h-[40px] min-h-[1em] w-0.5 self-stretch bg-black dark:bg-black/10 mr-5 ml-5 mt-2">
                     </div>
                 </div>
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 lg:justify-center lg:items-center sm:justify-center sm:items-center">
                     <img className="h-9 w-13 mt-2 mr-5 " src={Project} alt="" />
                 </div>
             </div>
 
-            <div className="flex gap-8 justify-end items-end">
-                <div>
-                    <h2 className="mb-2" >Map</h2>
-                    <h2 className="mb-2" >Data</h2>
-                    <h2 className="mb-2">About</h2>
+            <div className="lg:flex lg:gap-20 justify-end items-end sm:grid sm:grid-cols-1 sm:gap-3 lg:mt-3">
+            <div className="ml-5 sm:text-center sm:place-self-center">
+                    <div className="flex gap-2" >
+                        <h2 className="mb-2" >Map</h2>
+                    </div>
+                    
+                    <div className="flex gap-2" >
+                        <h2 className="mb-2" >Data</h2>
+                    </div>
+                    
+                    <div className="flex gap-2" >
+                        <h2 className="mb-2" >About</h2>
+                    </div>
                 </div>
 
-                <div className="ml-5">
-                    <div className="flex gap-2" >
-                        <img src={Place} alt="" />
+                <div className="ml-5 sm:text-center sm:place-self-center">
+                    <div className="flex gap-2 mb-2" >
+                        <img className="h-auto w-auto" src={Place} alt="" />
                         <h2 className="mb-2" >Search Projects</h2>
                     </div>
                     
-                    <div className="flex gap-2" >
-                        <img src={Call} alt="" />
+                    <div className="flex gap-2 mb-2" >
+                        <img className="h-auto w-auto"  src={Call} alt="" />
                         <h2 className="mb-2" >+977-01 4563 235, 01 4575 246</h2>
                     </div>
                     
-                    <div className="flex gap-2" >
-                        <img src={Email} alt="" />
+                    <div className="flex gap-2 mb-2" >
+                        <img className="h-auto w-auto" src={Email} alt="" />
                         <h2 className="mb-2" >mail@mail.com</h2>
                     </div>
                 </div>
             </div>
         </div>
 
+    {/* ------------------------------------Footer - Final--------------------------------------------------- */}
+
         <div className="mx-40" >
         <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-700 to-transparent opacity-25 dark:via-neutral-700" />
         </div>
 
-        <div className="mx-40 grid grid-cols-2">
-            <div className="flex gap-2">
+        <div className="mx-40 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 sm:gap-5 xl:grid xl:grid-cols-2">
+            <div className="flex gap-2 sm:text-center sm:place-self-center md:place-self-center xl:place-self-start">
                 <img className="h-6 w-6" src={England} alt="" />
                 <p className="ml-2">English</p>
             </div>
 
-            <div className="flex gap-2 justify-end items-end mb-4">
+            <div className=" md:text-center justify-end items-end mb-4 sm:grid sm:grid-cols-1 sm:text-center xl:flex xl:gap-3">
                 <p>Privacy Policy</p>
                 <p>Terms</p>
                 <p>Copyright © 2022 Project Database Portal</p>
             </div>
         </div>
-{/* 
-      <div className="mt-20 p-20 bg-red-200 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-5">
-        <div className="bg-gray-500 col-span-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro,
-          sequi autem expedita, consectetur temporibus fugit doloribus
-          reiciendis deleniti rem inventore aut hic placeat, aperiam aliquid
-          molestiae asperiores. Expedita, eos? s
-        </div>
-        <div className="bg-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro,
-          sequi autem expedita, consectetur temporibus fugit doloribus
-          reiciendis deleniti rem inventore aut hic placeat, aperiam aliquid
-          molestiae asperiores. Expedita, eos? s
-        </div>
-        <div className="bg-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro,
-          sequi autem expedita, consectetur temporibus fugit doloribus
-          reiciendis deleniti rem inventore aut hic placeat, aperiam aliquid
-          molestiae asperiores. Expedita, eos? s
-        </div>
-        <div className="bg-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro,
-          sequi autem expedita, consectetur temporibus fugit doloribus
-          reiciendis deleniti rem inventore aut hic placeat, aperiam aliquid
-          molestiae asperiores. Expedita, eos? s
-        </div>
-        <div className="bg-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro,
-          sequi autem expedita, consectetur temporibus fugit doloribus
-          reiciendis deleniti rem inventore aut hic placeat, aperiam aliquid
-          molestiae asperiores. Expedita, eos? s
-        </div>
-        <div className="bg-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro,
-          sequi autem expedita, consectetur temporibus fugit doloribus
-          reiciendis deleniti rem inventore aut hic placeat, aperiam aliquid
-          molestiae asperiores. Expedita, eos? s
-        </div>
-      </div>
-
-      <div className="mx-20 bg-blue-400 grid md:grid-cols-3 gap-5">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-          consequatur sequi, odit error id minus magni accusantium animi
-          consequuntur, corrupti omnis excepturi provident rem esse voluptas
-          accusamus ducimus a. Doloribus.
-        </div>
-
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iusto
-          atque. Numquam, voluptas nobis, repellat molestiae in labore eius vel
-          quod earum, maiores assumenda quidem esse laborum exercitationem. A,
-          quam.
-        </div>
-
-        <div>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad harum
-          quia possimus provident similique commodi a beatae. Qui facilis quam
-          consequatur, quo eum accusamus eveniet! Labore illum consectetur error
-          vero?
-        </div>
-
-        <div className="bg-slate-600 col-span-3 justify-center align-middle text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-          impedit temporibus corporis pariatur accusantium harum ab doloribus
-          nostrum ipsam. Facere quas numquam sapiente quo repellat iusto tempora
-          eaque perspiciatis sunt!
-        </div>
-      </div> */}
+        
     </>
   );
 };
