@@ -8,6 +8,7 @@ import Error from './Page/Error'
 
 import Form from './Component/RegistrationForm'
 import Info from './Page/Info'
+import Appp from './Component/Appp'
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
         <Route path = '*' element={<Error/>}></Route>
       </Routes>
       </BrowserRouter> */}
-      <Info/>
+      {/* <Info/> */}
+      <Appp/>
     </>
   )
 }
