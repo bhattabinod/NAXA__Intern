@@ -24,26 +24,23 @@ const Info = () => {
     <>
         {/* -------------------------------------------Header Part----------------------------------------- */}
 
-        <div className="flex justify-between md:grid md:grid-cols-1 lg:flex sm:grid sm:grid-cols-1 bg-blue-500 mx-20">
-            <div className="flex items-center sm:flex sm:justify-center md:flex md:justify-center lg:flex lg:justify-start mx-10">
-            <img
-                className="h-20 w-18 ml-3"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem_of_Nepal.svg/1200px-Emblem_of_Nepal.svg.png"
-                alt=""
-            />
-            <div className="grid grid-cols-1 gap-0 m-3 text-white">
-                <h2 className="font-extrabold">कर्णाली प्रदेश सरकार</h2>
-                <h2 className="font-semibold">
-                मुख्यमन्त्री तथा मन्त्रिपरिषदको कार्यालय
-                </h2>
-                <p>Project Information Management System</p>
+        <div className="flex-col justify-between md:grid md:grid-cols-1 lg:flex-row xl:flex sm:grid sm:grid-cols-1 bg-blue-500 mx-20">
+            <div className="flex-col items-center xl:flex-row sm:flex sm:justify-center md:flex md:justify-center lg:flex lg:justify-start mx-10">
+                <img className="h-20 w-18 xl:place-self-start" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem_of_Nepal.svg/1200px-Emblem_of_Nepal.svg.png"alt="" />
+                
+                <div className="grid grid-cols-1 gap-0 m-3 text-white">
+                    <h2 className="font-extrabold">कर्णाली प्रदेश सरकार</h2>
+                    <h2 className="font-semibold">
+                    मुख्यमन्त्री तथा मन्त्रिपरिषदको कार्यालय
+                    </h2>
+                    <p>Project Information Management System</p>
+                </div>
             </div>
-            </div>
-            <div className="flex items-center mx-10 md:flex md:justify-center sm:flex sm:justify-center lg:flex lg:gap-0 text-white">
-            <p className="mx-3">Data</p>
-            <p className="mx-3">About</p>
-            <button className="lg:h-20 lg:w-20">
-                <img src={Rectangle1} alt="" />
+
+            <div className="flex-row text-center items-center mx-10 xl:flex-row md:flex md:justify-center sm:flex sm:justify-center lg:flex lg:gap-0 text-white">
+            <p className="mx-3 my-2">Data</p>
+            <p className="mx-3 my-2">About</p>
+            <button className="lg:h-20 lg:w-20 my-2"><img src={Rectangle1} alt="" />
             </button>
             <button className="mx-3 text-white border-white">Login</button>
             </div>
@@ -69,7 +66,7 @@ const Info = () => {
 
         {/* -----------------------------------------------------Page-II-------------------------------------------------------- */}
 
-        <div className="flex p-12 bg-yellow-100 mt-5 mx-20 rounded-t-lg sm:grid sm:grid-cols-1 md:grid      md:grid-cols-1 lg:grid lg:grid-cols-1 xl:grid xl:grid-cols-2 ">
+        <div className="flex-col p-12 bg-yellow-100 mt-5 mx-20 rounded-t-lg sm:grid sm:grid-cols-1 md:grid      md:grid-cols-1 lg:grid lg:grid-cols-1 xl:grid xl:grid-cols-2 ">
             <div className="mt-20 ml-15 justify-center">
             <h1 className="font-extralight">
                 This portal is developed to identify the enabling factors of the
@@ -102,7 +99,7 @@ const Info = () => {
       <div className="bg-yellow-100 mx-20 font-bold sm:text-center md:text-start lg:text-start xl:text-start">
         <p className="font-bold mx-5">Objective</p>
       </div>
-      <div className="flex bg-yellow-100 mx-20 rounded-b-lg">
+      <div className="flex bg-yellow-100 mx-20 rounded-b-lg flex-col sm:flex-row ">
         <div className="sm:place-self-center sm:align-middle">
           <img className="my-4 mx-10" src={Freelance} alt="" />
           <p className="mx-5 mb-10 sm:text-start">
