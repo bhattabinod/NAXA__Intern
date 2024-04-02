@@ -9,6 +9,10 @@ import Error from './Page/Error'
 import Form from './Component/RegistrationForm'
 import Info from './Page/Info'
 import Appp from './Component/Appp'
+import Data_Fetching from './Component/Data_Fetching'
+import Cake from './Component/Cake.cjs'
+import CounterSlice from './Component/CounterSlice'
+import YourComponent from './Component/YourComponent'
 
 function App() {
 
@@ -23,7 +27,12 @@ function App() {
       </Routes>
       </BrowserRouter> */}
       {/* <Info/> */}
-      <Appp/>
+      {/* <Appp/> */}
+      {/* <Data_Fetching/> */}
+      {/* <Cake/> */}
+      <CounterSlice/>
+      <YourComponent/>
+
     </>
   )
 }
