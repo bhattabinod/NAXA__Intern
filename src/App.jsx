@@ -10,9 +10,10 @@ import Form from './Component/RegistrationForm'
 import Info from './Page/Info'
 import Appp from './Component/Appp'
 import Data_Fetching from './Component/Data_Fetching'
-import Cake from './Component/Cake.cjs'
 import CounterSlice from './Component/CounterSlice'
-import YourComponent from './Component/YourComponent'
+import Parent from './Component/Parent'
+import Parent1 from './Component/Parent1'
+import ParentB from './Component/ParentB'
 
 function App() {
 
@@ -30,8 +31,9 @@ function App() {
       {/* <Appp/> */}
       {/* <Data_Fetching/> */}
       {/* <Cake/> */}
-      <CounterSlice/>
-      <YourComponent/>
+      {/* <Parent/> */}
+      {/* <Parent1/> */}
+      <ParentB/>
 
     </>
   )
