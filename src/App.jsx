@@ -8,6 +8,8 @@ import Error from './Page/Error'
 
 import Form from './Component/RegistrationForm'
 import Info from './Page/Info'
+import UserListComponent from './Component/Todo'
+import MyAreaChart from './Component/rechart'
 
 function App() {
 
@@ -21,7 +23,10 @@ function App() {
         <Route path = '*' element={<Error/>}></Route>
       </Routes>
       </BrowserRouter> */}
-      <Info/>
+      {/* <Info/> */}
+      <UserListComponent/>
+      <MyAreaChart/>
+  
     </>
   )
 }
