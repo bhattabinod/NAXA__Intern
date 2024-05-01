@@ -8,12 +8,17 @@ import Error from './Page/Error'
 
 import Form from './Component/RegistrationForm'
 import Info from './Page/Info'
+
+import UserListComponent from './Component/Todo'
+import MyAreaChart from './Component/rechart'
+
 import Appp from './Component/Appp'
 import Data_Fetching from './Component/Data_Fetching'
 import CounterSlice from './Component/CounterSlice'
 import Parent from './Component/Parent'
 import Parent1 from './Component/Parent1'
 import ParentB from './Component/ParentB'
+
 
 function App() {
 
@@ -28,13 +33,15 @@ function App() {
       </Routes>
       </BrowserRouter> */}
       {/* <Info/> */}
+
+      <UserListComponent/>
+      <MyAreaChart/>
       {/* <Appp/> */}
       {/* <Data_Fetching/> */}
       {/* <Cake/> */}
       {/* <Parent/> */}
       {/* <Parent1/> */}
       <ParentB/>
-
     </>
   )
 }
